@@ -1,0 +1,364 @@
+---
+title: The Effect of an Tailored Incentive on COVID-19 Vaccination Rates
+author: Anna Calderon, William John FitzGerald, Sebastian Hubard, Atik Kikani, and
+  Kei Kinoshita
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment="", warning = FALSE, message = FALSE, tidy.opts=list(width.cutoff=55), tidy = TRUE)
+```
+
+## Part 1:  Research Proposal
+
+### Executive Summary / Abstract
+
+Lower COVID-19 vaccination rates across southern states, like Louisiana, are of great concern to government and health officials. CDC officials warn that areas with large populations of unvaccinated people are more susceptible to further outbreaks and especially with the emerging Delta variant. Such outbreaks would result in strained medical resources, economic strife, and the unnecessary loss of life. In an effort to boost vaccination rates, many jurisdictions have introduced incentive-based programs which attach a monetary reward to getting vaccinated. However, such generic monetary incentives have thus far produced inconclusive results, and many communities continue to reflect low vaccination rates. The purpose of this research study is to explore the impact of incentives that are specifically tailored to a local community’s culture and demographics on COVID-19 vaccination rates.
+To test this impact of tailored incentives on vaccination rates the study will be conducted in the greater New Orleans region which accounts for 17.2% of total COVID-19 cases in the state of Louisiana. Specifically, within the New Orleans area, the target population is unvaccinated Gen Z and Millennials, defined as 18-39 years old. The study’s sampling unit will be based on the individual as this target population also represents the age group with the lowest vaccination rate. 
+ 
+The optimal sample size for the study is 790 unvaccinated participants within the target geographic location and age groups. The participants will consist of a random selection from the CDC database. Subsequently, the participants, who will be randomly assigned to either a control or treatment group, will be mailed a flyer with information of a nearby vaccine pop-up site. Members of the control group will receive a flyer without any attached incentive and the treatment group will receive a flyer with an attached incentive. 
+
+The incentive offers entry to a lottery that will randomly select five winners. Each of the five winners will receive two New Orleans Saints season tickets for the upcoming 2021 season. Further, the study will also employ a proportion test which allows for a more in-depth analysis as to whether or not the sample provided is representative across the entire population. The anticipated total length of the study is 60 business days. 	
+ 
+The flyers will be sent to addresses present on the participants’ licenses. In order to track and collect data the researcher team will manage two separate Microsoft Excel files. One file, to be named “Information” will match participants' names and addresses to unique IDs. The second file, to be named “Study” will be formatted with three columns: Unique ID, Treatment or Control Group and Received Vaccination. After 60 days of the study’s commencement, the CDC database will be queried again for the same 790 participants. The extracted data will be cross-referenced against the “Information” file and the Received Vaccination column from the “Study” file will be filled out. The CDC will act as guardians for all participant related data by password protecting both Excel files which are only to be saved on the organization’s secured share drive. Additionally, access will be limited to only the five principal investigators and their two immediate directors.  	  
+ 
+As the study depends on the mailing of flyers to participants, this proposal does come with certain inherent limitations. The central limitation is the lack of a 100% controlled environment which may potentially introduce confounding variables. This includes the inability to confirm receipt of flyers by intended targets and the inability to control external noise such as sharing of the vaccine incentive offer amongst subjects. Despite any potential limitations, determining the impact of incentives tailored to a specific community’s culture and demographics on vaccination rates would play a critical role in mitigating spread and ultimately eliminating COVID-19.  
+
+
+### Statement of the Problem
+
+For months, the White House has been particularly concerned about Southern states, such as Louisiana, that have lower COVID-19 vaccination rates, as they are more susceptible to outbreaks from the Delta variant (Wilson, 2021). Louisiana continues to struggle with vaccine adherence with only 42.4% of the population having received at least one dose of the vaccine, which is the fourth lowest rate in the nation (Mayo Clinic, 2021). Some doctors and medical experts are sounding the alarm that Louisiana is on track to become the next global epicenter of the pandemic with hospitalizations quickly spiraling out of control (Musumeci, 2021). In the week of July 23, 2021, the state witnessed the nation’s highest COVID-19 case rate per 100,000 people with 573.3 cases. The state also has the third highest seven-day death rate per 100,000 people at 1.7 deaths. Since February 2021, 98% of all COVID-19 deaths in Louisiana have been unvaccinated (Woodruff, 2021). 			
+
+Since the onset of the pandemic, the Greater New Orleans region has been considered the hot spot in Louisiana, representing 17.2% of the state’s cases. In July 2021, Gen Z and Millennials, defined as adults ages 18-39 years old, represented 60.1% of all COVID-19 cases in New Orleans. This is largely attributed to their low vaccination rate with only 31.6% of Gen Z and Millennials partially vaccinated, compared to 64.0% of adults 40 years and older who are partially vaccinated (Louisiana Department of Health, 2021).
+
+To date, COVID-19 vaccine incentives most commonly include generic monetary rewards, such as entry to $1 million lotteries (NGA, 2021). However, as specific regions and demographics begin to demonstrate lagging COVID-19 vaccination rates, it may become increasingly important to design incentives that are tailored to those populations of interest. This research study examines the effect of incentives that are tailored to local communities and demographics on COVID-19 vaccination rates. 
+
+
+### Research Questions and Hypotheses 
+
+To properly examine the effect of tailored incentives, we define the following for our research study: 
+
+Tailored incentive. An incentive ‘I’ is tailored if it is customized to appeal to a specific region (defined as the Greater New Orleans region) and demographic (defined as Gen Z and Millennials ages 18-39 years old). For purposes of the study, we assume that all subjects will receive the designated incentive on the flyer that we will mail to them.
+
+COVID-19 vaccination rate. The rate of success, where,
+1 = subject receives at least one dose of the COVID-19 vaccine (successful outcome) during the 60-day period
+0 = subject does not receive at least one dose of the COVID-19 vaccine (unsuccesful outcome) during the 60-day period 
+
+
+With the definitions above, the research study seeks to answer the following question. 
+
+Research Question 1. What is the effect of mailing a tailored incentive on COVID-19 vaccination rates among unvaccinated 18-39 year olds who live in New Orleans?
+
+V of Control Group = Proportion of participants, who were mailed the flyer without the incentive offer, that have received at least one dose of the COVID-19 vaccine 
+V of Treatment Group = Proportion of participants, who were mailed the flyer with the incentive offer, that have received at least one dose of the COVID-19 vaccine
+
+Null Hypothesis: Proportion of participants who get at least one dose of the COVID-19 vaccine will be the same between the control group (defined as participants who were mailed a flyer without an incentive) and the treatment group (defined as the participatants who were mailed a flyer with an incentive). 
+
+Alternative Hypothesis: Proportion of participants who get at least one dose of the COVID-19 vaccine will not be the same between the control group (defined as participants who were mailed a flyer without an incentive) and the treatment group (defined as the participatants who were mailed a flyer with an incentive). 
+
+
+Mathematical Notation					
+RV = COVID-19 vaccination rate (%) of participants who were mailed the flyer with the incentive offer
+R0 = COVID-19 vaccination rate (%) of participants who were mailed the flyer without the incentive offer
+						
+H0: RV - R0 = 0
+HA: RV - R0 ≠ 0
+
+### Importance of the Study
+
+In an effort to increase COVID-19 vaccination rates, Louisiana has been urgently promoting various types of incentives, ranging from $1 million lotteries to waiving community service requirements for those on probation (McGill, 2021). Existing literature has examined the impact of financial incentives on increasing COVID-19 vaccine adherence. However, as specific regions and demographics are beginning to show lagging vaccination rates, it will become increasingly important to find incentives that appeal to particular populations. A gap in the commentary examines the effect of incentives tailored to local communities and regions on COVID-19 vaccination rates. The purpose of this study is to begin to close that gap.
+
+### Literature Review
+
+There is vast literature suggesting that incentive rewards motivate people to change health behaviors. For example, a randomized control trial (RCT) found evidence that monetary incentives were superior to outreach in increasing adherence to the multi-dose hepatitis B vaccine among injection drug users (Seal et al., 2003). Additionally, in a meta-analysis review of 20 RCTs, researchers evaluated the impact of monetary incentives in increasing weight loss or physical activity. The review concluded that monetary incentives are efficacious in increasing physical activity and weight loss in adults of sedentary behavior or chronic health conditions (Gong et al., 2018).
+						
+A randomized survey experiment by the U.C.L.A. COVID-19 Health and Politics Project found that approximately a third of the U.S. unvaccinated population reported they would be more likely to get the vaccine with a monetary incentive. The study also suggests that increases in the monetary value of the incentive may heighten the proportion of unvaccinated people who are willing to get the vaccine. Specifically, 34% of the unvaccinated sample reported they are more likely to get the vaccine if given a $100 incentive (New York Times, 2021).
+			
+A meta-analysis study suggests that computer-tailored interventions have the potential to improve health behavior. The analysis included 88 studies focused on behaviors such as smoking cessation, physical activity, eating a healthy diet, and receiving regular mammography screening. These interventions all provided tailored content for users decided by an algorithm based on specific characteristics from each individual (Krebs et al., 2010). Moreover, a systematic literature review suggests that culturally adapted interventions effectively motivated individuals to change their eating habits. Researchers reviewed twelve published studies that tailored their intervention to a Hispanic population by adjusting Hispanic recipes, cultural beliefs, literacy levels, and other similar nature modifications (McCurley et al., 2017). 
+						
+There is extensive literature supporting the effectiveness of incentive rewards and tailored interventions to change health-related behaviors. However, there isn’t sufficient research examining the effectiveness of the combination of both. This study aims to address that gap in the literature by creating an incentive reward program tailored to the local culture of a specific geographical area to alter health-related behaviors.
+
+
+### Research Plan
+
+
+#### Population of Interest
+
+Since the onset of the pandemic, the Greater New Orleans region has been considered the hot spot in Louisiana, representing 17.2% of the state’s cases (Louisiana Department of Health, 2021). In July 2021, Gen Z and Millennials, defined as adults ages 18-39 years old, represented 60.1% of all COVID-19 cases in New Orleans. This is largely attributed to their low vaccination rate with only 31.6% of Gen Z and Millennials partially vaccinated, compared to 64.0% of adults 40 years and older who are partially vaccinated. With the current resurgence of COVID-19 cases in New Orleans, emergency medical responders do not have enough capacity to respond to 911 calls (Elamroussi, 2021).
+
+The population of interest for this study consists of Gen Z and Millennials (ages 18-39 years old), who have not received the COVID-19 vaccine and live within New Orleans city boundaries which encompasses a 316 square-mile area and a total population of 390,845 (Britannica, 2021). New Orleans was selected due to its relation to the overall issue of vaccination rates but also because it’s population of nearly 400,000 would be sufficient enough for us to select a sizable sample to ensure a large enough sample. New Orleans is in the 50 most populated cities in the U.S. of which an estimated 31% of the state’s population are Gen Z/Millennials (Census Reporter, 2021).
+
+#### Sample Selection
+
+Our sample will be derived from our population of interest: Gen Z & Millennials living in the New Orleans city limits who have not yet received the COVID-19 vaccine. We will randomly assign the subjects of the target population to the two groups (a treatment and control group). We will be taking a large sample for our treatment group since a low response rate from the marketing flyers will likely make our output fairly small. In order to increase likelihood of statistical significant results, we will need to maximize our sample from the population of interest. Anyone who does not fall within the population of interest or does not have a mailing address on file with the government/CDC will be excluded from the study. The selected population will appear similar to our potential population for this reason. If multiple people are listed on file for one household mailing address and at least one member of that household falls into our population of interest, a flyer will be sent to the home with that individual as the recipient. If multiple individuals who fall within our population of interest reside in the same household/address, multiple flyers will be mailed.
+#### Sample Size
+
+To calculate our sample size, we used the power.prop.test function in R and performed a two-sample comparison of proportions power calculation. As a baseline probability for both experimental groups, we are using the current vaccination rate of our target population (U.S. Census, 2019). Meaning that our sample, regardless of which group they are randomized, will already have a 32% chance of getting vaccinated. Moreover, we estimated an additional 30% chance of getting vaccinated for our treatment group, adding up to a total probability of 42%. The additional probability for our treatment group is based on the results from the UCLA study mentioned in our literature review. That study results show that 34% of the unvaccinated sample population said a financial incentive would make them more likely to get vaccinated (New York Time, 2021). However, to consider that people may not always do what they said they would, we decrease the chance from 34% to 30%. Additionally, we used a significance level of 0.05 and a 0.8 power of the test. After performing the power analysis, results show that we need 395 participants for each group, making this a total of 790 participants for this study. 
+
+#### Operational Procedures
+
+Participants will be randomly selected from the New Orleans CDC database to isolate unvaccinated individuals, ages 18-39 years old. To protect participant confidentiality, each subject will be de-identified by using a unique subject ID. Microsoft Excel will be used to assign subjects to either the control or treatment group randomly. After randomization, two flyers will be mailed out. A central challenge with our experimental study is that it’s not conducted in a 100% controlled environment, and thus has the potential to be introduced to confounding variables. To best control for these confounding variables, we apply randomization to the sampling. The control group will receive the flyer in the mail without the incentive, while the treatment group will receive the flyer in the mail with the incentive. The flyer will be addressed to the participant, and only the participant will be able to redeem the incentive. Over the next 60 days, the database will be refreshed to evaluate the proportion of participants that received a vaccine at the pop-up vaccine site. At the end of the 60 days, we will conduct a two-variable test of proportions analysis to evaluate our hypothesis. The p-value will determine the significance of the results. Understanding the difference between the control and treatment groups provides information for future vaccine incentive programs.
+
+### Brief Schedule
+
+With people falling ill to COVID-19 each day, timeliness of the study becomes a large priority. As more people become infected, more variants are created and more innocent lives are lost. To expedite this study, we will work sequentially in three phases: sampling, distribution, and reporting. The study will require a total of approximately fifty business days for all three phases to be completed. 
+
+Sampling Phase. In the first phase of our study, we will use the CDC database in conjunction with other government resources to identify our population of interest, which will approximately require three business days due to compliance and red tape when handling government PII data. We will then spend seven  business days to clean the data to ensure we are accounting for our population of interest accurately. We will leverage a random number generator to select individuals from the population to ensure each member of the population has an equal chance of being selected. Subjects will be randomly assigned to the control group or the treatment group.In total, the sampling phase will take approximately ten business days to complete. 
+
+Distribution Phase. For the second phase of our study, we will hire an agency partner, Pel Hughes marketing, to handle the actual printing and distribution of the fliers. First, we will properly onboard the agency for five business days. During this time, we will  assign specific team members to develop the creative and get sign-off from key stakeholders. The agency will then print and distribute the flyers to a simple random sample that we identified in phase I of the study, which will require an additional five business days. In total, phase two will take approximately ten business days to complete. 
+
+Reporting Phase. Upon completion of the first two phases, the reporting phase will commence. We will observe the vaccination rates of our control and treatment groups for a period of 40 days to maximize our window of data collection and account for any shortages in available appointments.
+
+#### Data Collection
+
+From the CDC database,790 people between the ages of 18-39 years old will be randomly selected to receive the flyer via mail. The flyer will be sent to the address listed on their license. Two Microsoft Excel files will contain the participant’s data. One file, to be named “Information” will match participants' names and addresses to the unique ID. The second file, to be named “Study” will be formatted with three columns: Unique ID, Treatment or Control Group and Received Vaccination. 60 days after the study begins, the CDC database will be queried again for the same 790 participants. The extracted data will be cross-referenced against the “Information” file and the Received Vaccination column from “Study” will be filled out. 
+
+#### Data Security
+
+The CDC is responsible for protecting the data of the participants, address and vaccination status. Once the data is loaded into Excel, both files will be password protected, saved onto the organization’s secured share drive. Only the 5 researchers and two directions will know the password, which will not be shared virtually. The five researchers are all graduate school students at Columbia University working under the supervision of Natasa Rajici, ScD and Cynthia L. Bennett. The 5 researchers all possess bachelor degrees. 
+
+#### Outcomes (Dependent Variables)
+
+Let X take the value 1 if a subject gets at least one dose of the COVID-19 vaccine, and X will be 0 if the subject does not get at least one dose of the COVID-19 vaccine. The COVID-19 vaccine rate (%) of subjects will be E[X]. 
+
+#### Treatments (Independent Variables)
+
+The incentive offer on the flyer sent in the mail to the treatment group will be the entry into a lottery with five winners selected at random, who will each receive two Saints season tickets for the 2021 season. The estimated monetary value of the incentive is approximately $500 per season ticket. The incentive appeals to the local New Orleans community, as 75% of New Orleans residents identify as Saints fans and are the top 3 most passionate sports fans in America (Forbes, 2020).
+
+#### Other Variables
+
+N/A
+
+### Statistical Analysis Plan  
+
+For the duration of the study, statistical significance is when a p value is less than 5%. Sample size is derived from the p value of .05 and a power of .8. Sample proportion stemmed from the 2019 U.S. Census report indicating that only 32% of Gen Z (27%) and Millenials (37%) have one vaccine dose (USAFacts, 2021). The second proportion, 30%, is derived from the 2021 New York Times article.. Using a power test of proportions, the ideal participant size is 395 people in the control and treatment group each, totaling 790 participants in the study. The power test of proportions allows us to perfect our subject size through optimization of the effect of the two samples.
+
+Analysis of 790 participants will be conducted twice, using a proportion test with bernoulli distribution. The first test will be analyzed under the null hypothesis, and the other analyzed under the alternative hypothesis.The proportion test allows the team to understand whether or not the sample provided is representative throughout the entire population. Operating within the bernoulli distribution provides the data with a successive definitive time series. 
+
+### Limitations and Uncertainties
+
+Since our experimental design consists of mailing the control and treatment materials (i.e., a flyer with or without an inventive offer), we cannot be certain that participants have received and been exposed to the flyer. For instance, the flyer might get lost in the mail, or the participant might be on vacation and unable to check their mail. This limitation reduces our ability to draw causal conclusions from the study. People outside of the study may hear about the offer and choose to receive a vaccine. To account for this, the ratios of vaccinated to unvaccinated people will be noted at the start of the study and the end of the study. If significant changes occur, the cultural effect on the non millennial and gen z populations should be investigated further.
+
+Since the study is conducted in the participant's natural environment, participants will likely be exposed to external noise throughout the study that may influence their decision making, such as talking to other participants in the study or being exposed to news about the vaccine. As such, this may serve as unobserved confounding variables that might affect their COVID-19 vaccine adherence. 
+
+We also do not have detailed demographic data or information about why the participants have not yet received the vaccine prior to the experiment. We also assume that our incentive will appeal to all participants at an equal level. Specifically, the incentive offer is based on the high probability that people in the area are fans of the Saints football team. If the participants are not fans of the Saints or already have season tickets, the incentive is not impactful. To help support reasonable balance between the control and treatment groups, we randomly allocated participants to each group. However, there is still uncertainty regarding the reasonable balance between the groups, which may impact how generalizable the findings will be to the larger population. 
+
+Further, we cannot control how the participants will ultimately view and receive the incentive. Participants may choose to perceive the tickets as a means for monetary gain by selling the tickets to others, instead of attending the games. This, in turn, would dilute the difference between a cultural and monetary incentive.  
+
+Lastly, given the urgency of the study, we limited our data collection window to 60 days, which hinders our ability to isolate our independent variable and may not be representative of the true effect of COVID-19 vaccine incentives. For example, if the study is conducted when New Orleans sees its highest surges of COVID-19 cases, this might skew our success rate positively. 
+
+## Part 2:  Simulated Studies
+
+
+### Research Question 1:
+
+#### Scenario 1:  No Effect
+First, a no-effect simulation was performed, which means that the treatment has no impact on the population's outcomes. In this scenario, we simulated that the null hypothesis for this study is true, and both of our experimental groups had the same distribution. The sample size was 790, where subjects are randomized to either control or treatment group forming two groups of 395 subjects each. Both groups had the baseline probability, which is a 32% chance of getting vaccinated. A test of proportions was performed to compare the outcome for both groups. Results for a single experiment stimulation show a p-value of 0.80, suggesting no significant difference between the two groups concerning their vaccination rate.
+
+##### Simulation
+
+```{r q1_scenario1_simulation}
+library(data.table)
+library(DT)
+library(purrr)
+
+n <- 790 
+set.seed(seed = 329)
+
+bp.dat <- data.table(Group = sample(x = c("Treatment", "Control"), size = n, replace = T))
+
+bp.dat[Group == "Treatment", VR := round(x = rbernoulli(n = .N, p=.32), digits = 1)]
+bp.dat[Group == "Control", VR := round(x = rbernoulli(n = .N, p=.32), digits = 1)] 
+
+table(bp.dat)
+prop.test(table(bp.dat$Group, bp.dat$VR))
+
+analyze.experiment <- function(the.dat) {
+  setDT(the.dat)
+
+  the.test <- prop.test(table(the.dat$Group, the.dat$VR))
+ 
+  the.effect <- the.test$estimate[1] - the.test$estimate[2] 
+  lower.bound <- the.test$conf.int[1] 
+  p <- the.test$p.value
+  
+  result <- data.table(effect = the.effect, lower_ci = lower.bound, p = p)
+  
+  return(result)
+}
+
+analyze.experiment(the.dat = bp.dat)
+
+table(bp.dat)
+prop.test(table(bp.dat$Group, bp.dat$VR))
+
+```
+
+##### Analysis
+Furthermore, we generated 1000 simulated experiments with the same characteristics as the single study simulation in the no-effect scenario. Since now we have more studies, this simulation had a total of 790000 subjects. Results again corroborate that there is indeed no significant difference between the two groups. When the two groups had the same distribution, the simulation suggests a 4% chance of obtaining false positives and a 96% chance of true negatives. In other words, when performing similar studies, there is a 4% chance of committing a type 1 error. If we wanted only to comply with the standard 5% probability of type 1 error, we could have reduced the sample size to 760. However, we decided not to reduce the sample size due to the results shown in the second scenario, demonstrating the expected effect simulation. 
+
+```{r q1_scenario1_analysis}
+
+n <- 790 
+B <- 1000 
+RNGversion(vstr = 3.6)
+set.seed(seed = 4172)
+
+Experiment <- rep.int(x = 1:B, times = n)
+Group <- sample(x = c("Treatment", "Control"), size = n*B, replace = T)
+
+sim.dat <- data.table(Experiment, Group)
+setorderv(x = sim.dat, cols = c("Experiment", "Group"), order = c(1,1))
+sim.dat[Group == "Treatment", VR := round(x = rbernoulli(n = .N, p=.32), digits = 1)]
+sim.dat[Group == "Control", VR := round(x = rbernoulli(n = .N, p=.32), digits = 1)]
+
+dim(sim.dat) 
+
+
+exp.results <- sim.dat[, analyze.experiment(the.dat = .SD), 
+                       keyby = "Experiment"] 
+
+DT::datatable(data = round(x = exp.results[1:100, ], digits = 3), 
+    rownames = F)
+
+exp.results[, mean(p < 0.05)]
+exp.results[, summary(effect)]
+exp.results[, summary(lower_ci)]
+```
+
+
+#### Scenario 2:  An Expected Effect
+
+##### Simulation
+The second scenario displays a single study simulation when the distributions of the two groups are different. More specifically, the alternative hypothesis for this study is true, and the groups have statistically significant differences. The sample size is 790, where subjects are randomized to either control or treatment group forming two groups of 395 subjects each. The vaccination rate was 32% for the control and 42% for the treatment group. Then, a test of proportions was performed to compare the outcome for both groups. Results for the single experiment stimulation show a p-value of less than 0.001, suggesting a significant difference between the two groups regarding their vaccination rate. Additionally, the proportion of vaccinated subjects is 67%  in the treatment group and 56% in the control group.
+
+```{r q1_scenario2_simulation}
+
+n <- 790 
+set.seed(seed = 329)
+
+bp.dat <- data.table(Group = sample(x = c("Treatment", "Control"), size = n, replace = T))
+bp.dat[Group == "Treatment", VR := round(x = rbernoulli(n = .N, p=.32 + 0.32*0.30), digits = 1)]
+bp.dat[Group == "Control", VR := round(x = rbernoulli(n = .N, p=.32), digits = 1)] 
+
+table(bp.dat)
+prop.test(table(bp.dat$Group, bp.dat$VR))
+
+
+analyze.experiment <- function(the.dat) {
+  setDT(the.dat)
+  
+  the.test <- prop.test(table(the.dat$Group, the.dat$VR))
+  
+  the.effect <- the.test$estimate[1] - the.test$estimate[2] 
+  lower.bound <- the.test$conf.int[1] 
+  p <- the.test$p.value
+  
+  result <- data.table(effect = the.effect, lower_ci = lower.bound, p = p)
+  
+  return(result)
+}
+
+analyze.experiment(the.dat = bp.dat)
+```
+
+##### Analysis
+Moreover, we also performed a simulation of 1000 experiments with the same characteristics as the expected effect scenario. Again, here we also have a total of 790000 subjects. Results show that there is a statistically significant difference between the two groups in regards to their vaccination rate. This simulation with the original sample size suggests a 21% chance of obtaining false negatives and a 79% chance of true negatives. There is a 21% chance of committing a type 2 error when performing similar studies with a power of test of 79%. To comply with the previously established 80% of power, we increased the sample size to 820. Therefore the optimal size is 820 for this experiment. 
+
+
+```{r q1_scenario2_analysis}
+
+n <- 820 
+B <- 1000 
+
+RNGversion(vstr = 3.6)
+set.seed(seed = 4172)
+
+Experiment <- rep.int(x = 1:B, times = n)
+Group <- sample(x = c("Treatment", "Control"), size = n*B, replace = T)
+
+sim.dat <- data.table(Experiment, Group)
+setorderv(x = sim.dat, cols = c("Experiment", "Group"), order = c(1,1))
+sim.dat[Group == "Treatment", VR := round(x = rbernoulli(n = .N, p=.32 + 0.32*0.30), digits = 1)]
+sim.dat[Group == "Control", VR := round(x = rbernoulli(n = .N, p=.32), digits = 1)]
+
+dim(sim.dat) 
+
+names(sim.dat)
+
+exp.results <- sim.dat[, analyze.experiment(the.dat = .SD),
+                       keyby = "Experiment"] 
+
+
+DT::datatable(data = round(x = exp.results[1:100, ], digits = 3), 
+    rownames = F)
+
+exp.results[, mean(p < 0.05)]
+exp.results[, summary(effect)]
+exp.results[, summary(lower_ci)]
+    
+```
+
+## References
+
+1. Burke, M. (2021). Louisiana sees the highest spike in single-day Covid hospitalizations since start of pandemic. Retrieved from https://www.nbcnews.com/news/us-news/louisiana-sees-highest-spike-single-day-covid-hospitalizations-start-pandemic-n1275282
+
+2. Caldwell, T. (2021). The slowing Covid-19 vaccination rate is worrying experts. Here’s what some states are doing to change the trend. Retrieved from https://www.cnn.com /2021/06/05/health/us-coronavirus-saturday/index.html
+
+3. CDC (2021). COVID-19 Vaccinations in the United States. Retrieved June 12, 2021, from https://covid.cdc.gov/covid-data-tracker/#vaccinations
+
+4. Cohen, M. & Davis, M. R. (2021). Vaccine freebies abound for those who get the shot. Retrieved from https://www.aarp.org/health/conditions-treatments/info-2021/ vaccine -incentives.html
+
+5. Elamroussi, A. (2021). New Orleans EMS can’t keep up with calls due to COVID-19 surge as mayor restores a mask mandate. Retrieved from https://www.cnn.com/2021/07/31/us/new-orleans-covid-19-surge/index.html 
+
+6. Ellis, R. (2021). Fauci: Child Vaccinations Needed for Herd Immunity. WebMD. Retrieved from https://www.webmd.com/vaccines/covid-19-vaccine/news/20210322/ fauci-says-child-vaccinations-needed-for-herd-immunity
+
+7. Gong, Y., Trentadue, T. P., Shrestha, S., Losina, E., & Collins, J. E. (2018). Financial incentives for objectively-measured physical activity or weight loss in adults with chronic health conditions: A meta-analysis. PLoS ONE, 13(9), e0203939. https://link.gale.com/apps/doc/A557752263/AONE?u=columbiau&sid=summon&xid=5e f93c26
+
+8. Health and Human Services. Retrieved June 3, 2021, from https://www.healthypeople.gov/2020/tools-resources/evidence-based-resource/vaccinatio n-programs-client-or-family-incentive-rewards		
+
+9. Herd immunity and COVID-19 (coronavirus): What you need to know. (2021). Mayo Clinic.https://www.mayoclinic.org/diseases-conditions/coronavirus/in-depth/herd-immunity-and-coronavirus/art-20486808		
+
+10. Household Pulse Survey COVID-19 Vaccination Tracker. (2021). Retrieved June 12, 2021 from https://www.census.gov/library/visualizations/interactive/household-pulse-survey-covid-1 9-vaccination-tracker.html
+
+11. Krebs, P., Prochaska, J. O., & Rossi, J. S. (2010). A meta-analysis of computer-tailored interventions for health behavior change. Preventive medicine, 51(3-4), 214-221. https://doi.org/10.1016/j.ypmed.2010.06.004
+
+12. Louisiana Department of Health (2021). Retrieved July 31, 2021, from https://ldh.la.gov/Coronavirus/		
+			
+13. Louisiana Department of Health (2021). Louisiana Coronavirus (COVID-19) Vaccination Tracker. Retrieved July 31, 2021, from https://ladhh.maps.arcgis.com/apps/ opsdashboard/index.html#/e3d40ebd0b594202893c033fb4541ae9		
+							
+14. McCurley, J. L., Gutierrez, A. P., & Gallo, L. C. (2017). Diabetes prevention in US
+Hispanic adults: a systematic review of culturally tailored interventions. American journal of preventive medicine, 52(4), 519-529. https://doi.org/10.1016/j.amepre.2016.10.028
+
+15. McGill, K. (2021, July 29). Louisiana judge: Vaccination can count as community service. Retrieved from https://www.americanpress.com/louisiana-judge-vaccination-can-count-as-community-service/article_a8f43dd0-cb1a-5c4b-8113-9e6cb74f5b42.html
+
+16. Musumeci, N. (2021, July 28). Louisiana doctor says ‘exponential’ surge in COVID-19 hospitalizations isn’t a controllable thing at this point. Retrieved from https://www.businessinsider.com/louisiana-doctor-says-coronavirus-spread-is-exponential-in-state-2021-7 
+
+17. NGA (n.d). COVID-19 Vaccine Incentives. Retrieved June 12, 2021,from https://www.nga.org/center/publications/covid-19-vaccine-incentives/
+
+18. Powell, T. (2021). Louisiana governor seriously considering statewide mask mandate amid COVID surge. Retrieved from https://www.cbsnews.com/live-updates/ john-bel-edwards-louisiana-covid-19-fourth-wave-watch-live-stream-today-2021-07-30/
+
+19. Seal, K. H., Kral, A. H., Lorvick, J., McNees, A., Gee, L., & Edlin, B. R. (2003). A
+randomized controlled trial of monetary incentives vs. outreach to enhance adherence to the hepatitis B vaccine series among injection drug users. Drug and alcohol dependence, 71(2), 127-131. https://doi.org/10.1016/S0376-8716(03)00074-7
+					
+20. Settimi, C. (2020). America’s most passionate sports fans 2020. Forbes. https://www.neworleanssaints.com/news/forbes-ranks-new-orleans-saints-fans-among-the -most-passionate-in-all-of-profess
+					
+21. Smith-Schoenwalder, C. (2021). Drop in Vaccinations Threatens Biden's July 4 Goal. U.S. News. Retrieved from https://www.usnews.com/news/health-news/articles/2021 -06-08/drop -in-vaccinations-threatens-bidens-july-4-goal	
+
+22. U.S. Census Reporter. (2019). Retrieved July 25, 2021, from https://censusreporter.org/data/table/?table=B01001&geo_ids=16000US2255000,05000US22071,31000US35380,04000US22,01000US&primary_geo_id=16000US2255000#valueType%7Cestimate						
+
+23. U.S. Census Reporter. (2021). Retrieved June 12, 2021, from https://censusreporter.org /profiles/16000US2255000-new-orleans-la/							
+US Coronavirus vaccine tracker. (2021). Retrieved June 12, 2021,
+from https://usafacts.org/visualizations/covid-vaccine-tracker-states/ Vaccination 
+
+24. U.S. COVID-19 vaccine tracker (2021). Retrieved August 1, 2021, from https://www.mayoclinic. org/coronavirus-covid-19/vaccine-tracker
+
+25. Vavreck, L. (2021). $100 as incentive to get a shot? Experiment suggests it can pay off. The New York Times. Retrieved from https://www.nytimes.com/2021/05/04/upshot /vaccine-incentive-experiment.html	
+
+26. Wilson, S. (2021). White House COVID-19 advisor discusses concerns over the Delta variant & low vaccination rates in the South. Fox 8 News. Retrieved from https://www.fox8live. com2021/06/08/white-house-covid-19-advisor-discusses-concerns -over-delta-variant-low-vaccination-rates-south/
+
+27. Woodruff, E. (2021). As COVID cases surge in Louisiana, the inevitable is happening: more breakthrough infections. Retrieved from https://www.nola.com/news/coronavirus/article_6583709e-ea58-11eb-8c5e-fb0435c8d948.html
+
+
