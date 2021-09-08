@@ -286,7 +286,13 @@ exp.results[, summary(lower_ci)]
      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
 -0.100707  0.006117  0.027686  0.028056  0.051713  0.148724 
 ```
+## Results 
+- Optinal sample size for this study is 790 
+- Percentage of false positives (Type I) = 4%
+- Percentage of false negative (Type II) = 20%
 
-## References 
-[## References](file:///Users/annacalderon/Documents/DESKTOP/APAN/Summer%202021/Research%20Design/Group%20Project/Final%20Submission/Group-5---Final-Project-Submission_FINAL.html)
+<img width="817" alt="Screen Shot 2021-09-08 at 6 43 56 PM" src="https://user-images.githubusercontent.com/52983514/132600359-997887d4-9d43-421f-b2b1-8ed5926a7955.png">
+
+## Limitations & Uncertainties 
+<img width="737" alt="Screen Shot 2021-09-08 at 6 44 32 PM" src="https://user-images.githubusercontent.com/52983514/132600423-31b38b41-c69c-4ca9-8fce-c8092ba9fdff.png">
 
