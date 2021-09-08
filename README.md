@@ -1,10 +1,9 @@
-# SimulatedData_ExperimentPlanning
+# Simulated Experiemnt for Research 
 ## Overview
-- Using a simulation study to plan an experiment 
-- Generated a realistic data set using simulation techniques 
-- Created two scenarios: one where the treatment has the expected effect and the other where the treatment does not
-- Analyzed the data 
-- Describe the results of this simulated analysis and the conclusions you would draw if the study produced data like what you simulated
+- Identified the optinal sample size for desired significance level and power
+- Generated a realistic data set using simulation techniques for study design
+- Created two scenarios: effect and no effect
+- Analyzed the simulation data in both scenarios
 
 ## Background
 - There is vast literature suggesting that incentive rewards motivate people to change health behaviors (Seal et al., 2003; Gong et al., 2018)
