@@ -288,8 +288,8 @@ exp.results[, summary(lower_ci)]
 ```
 ## Results 
 - Optinal sample size for this study is 790 
-- Percentage of false positives (Type I) = 4%
-- Percentage of false negative (Type II) = 20%
+- Probability of false positives (Type I) = 4%
+- Probability of false negative (Type II) = 20%
 
 <img width="817" alt="Screen Shot 2021-09-08 at 6 43 56 PM" src="https://user-images.githubusercontent.com/52983514/132600359-997887d4-9d43-421f-b2b1-8ed5926a7955.png">
 
